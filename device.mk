@@ -14,5 +14,9 @@
 # limitations under the License.
 #
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
