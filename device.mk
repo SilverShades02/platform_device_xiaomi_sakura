@@ -26,5 +26,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
