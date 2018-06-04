@@ -18,5 +18,13 @@
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
