@@ -40,5 +40,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
