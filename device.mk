@@ -69,5 +69,9 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
