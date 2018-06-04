@@ -68,5 +68,9 @@ BOARD_VNDK_VERSION := current
 PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+
 # Inherit from proprietary files
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
