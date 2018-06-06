@@ -15,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.display.umax=1920x1080 \
     vidc.enc.dcvs.extra-buff-count=2 \
     sdm.idle_time=1000 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
