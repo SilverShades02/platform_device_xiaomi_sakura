@@ -73,5 +73,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
+# Properties
+-include $(LOCAL_PATH)/prop.mk
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/sakura/sakura-vendor.mk)
