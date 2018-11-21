@@ -1,0 +1,7 @@
+type hal_light_sakura, coredomain, domain;
+hal_server_domain(hal_light_sakura, hal_light)
+
+type hal_light_sakura_exec, exec_type, file_type;
+init_daemon_domain(hal_light_sakura)
+
+allow hal_light_sakura sysfs_leds:file rw_file_perms;
